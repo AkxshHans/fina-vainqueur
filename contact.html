@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Vainqueur Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+</head>
+<style>
+    :root {
+    --max-width: 1440px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    margin-top: 1vw;
+  
+  
+  
+  
+  }
+  .nav a {
+    font-size: clamp(1.2rem ,1cqi, 8rem);
+  
+    text-decoration: none;
+    color: white;
+    margin-top: 1vw;
+    z-index: 999999;
+    font-weight:200;
+  }
+
+.contact-container {
+    max-width: 500px;
+    margin: auto;
+    background-color: #1e1e1e; /* Dark background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 7vw;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none; /* No border for a modern look */
+    background-color: #333; /* Dark input background */
+    color: white; /* White text */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none; /* Remove default outline */
+    border-bottom: 2px solid #28a745; /* Green underline on focus */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+
+
+
+
+
+.container {
+    margin-top: 8vw;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* .column1 {
+    text-align: justify;
+} */
+.column1 a {
+    color: gray;
+    text-decoration: none;
+    text-align: justify;
+    line-height: 2;
+    font-size: 1.3vw;
+}
+.column1 a:hover{
+    color: #bbb3b3;
+    padding-left: 0.1vw;
+}
+.column1 h2 {
+    color: white;
+    font-weight:100;
+    font-family: 'Zodiak', serif;
+}
+.page2 img {
+    margin-top: 0.3vw;
+    width: 70vw;
+    height: 22vw;
+    object-fit: cover;
+    margin-left: 18vw;
+}
+#lastimage {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    margin-left: 0vw;
+    opacity: 0.2;
+    object-position: center;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+
+
+}
+
+
+
+@media(max-width:1000px){
+    
+
+    
+    .nav a{
+     font-size:2vw;
+     margin-top: 3vw;
+ 
+   } 
+    .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .column1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .column1 a {
+        font-size: 4.3vw;
+
+    }
+}
+
+
+
+@media(max-width:600px){
+    
+
+    
+    .nav a{
+      font-size:3.5vw;
+      margin-top: 4vw;
+  
+    }
+
+}
+</style>
+<body>
+
+<div class="nav">
+    <a href="index.html">HOME</a>
+    <a href="index.html#click">PROJECTS</a>
+    <a href="index.html#servicesservices">SERVICES</a>
+    <a href="aboutus.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+</div>
+
+<div class="contact-container">
+    <h2>Let's Work Together</h2>
+    <p>We'd love to hear from you! Please fill out the form below.</p>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="user_email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="user_message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+
+    
+</div>
+<div class="container">
+    <div class="row">
+        <div class="column1">
+            <h2>CONTACT</h2> 
+            <a href="#">Vainqueur Agency</a> <br>
+            <a href="#">vainqueuragency@gmail.com</a> <br>
+            <a href="#">🇮🇳 +91 8968775597</a> <br>
+        </div>
+
+
+        <div style="padding-top: 3.79vw;" class="column1">
+            <h2>FOLLOW ME</h2> 
+            <a href="https://www.instagram.com/vainqueur_agency/">INSTAGRAM</a> <br>
+            <a href="https://www.youtube.com/@VainqueurAgency">YOUTUBE</a> <br>
+            <a href="https://www.facebook.com/profile.php?id=61566410390009&mibextid=ZbWKwL">FACEBOOK</a> <br>
+            <a href="https://www.linkedin.com/company/backdrope-media/">LINKEDIN</a> <br>
+            <a href="https://www.threads.net/@backdrope_media?xmt=AQGzdNKeqWnGLT3ke4lVVXESvxTg_JRRq-5Sc9NcR3FCECM">THREADS</a> <br>
+
+
+
+        </div>
+
+        <div class="column1">
+            <h2>MENU</h2> 
+            <a href="index.html">HOME</a> <br>
+            <a href="index.html#servicesservices">SERVICES</a> <br>
+            <a href="aboutus.html">ABOUT</a> <br>
+        </div>
+    </div>
+</div>
+<script>
+    // GSAP Animation on Load
+gsap.from(".contact-container", {
+    duration: 1,
+    y: -50,
+    opacity: 0,
+});
+
+// Form Submission Animation
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+   // Animation for button click
+   gsap.to("button", { scale: 0.9, duration: 0.2, yoyo: true, repeat: 1 });
+
+   // Simulate form submission
+   setTimeout(() => {
+       alert("Your message has been sent!");
+       this.reset(); // Reset the form fields
+       gsap.to(".contact-container", { duration: 1, y: -50, opacity: 0 });
+       gsap.from(".contact-container", { duration: 1, delay: 1, y: -50, opacity: 0 });
+       gsap.to(".contact-container", { duration: 1, delay: 1, opacity: 1 });
+   }, 500);
+});
+</script>
+
+
+</body>
+</html>

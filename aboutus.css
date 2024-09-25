@@ -1,0 +1,157 @@
+
+:root{
+    --max-width:1440px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    
+ 
+
+}
+
+html, body {
+    background-color: #000000;
+    overscroll-behavior: none;
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    margin-top: 1vw;
+  
+  
+  
+  
+  }
+  .nav a {
+    font-size: clamp(1.2rem ,1cqi, 8rem);
+  
+    text-decoration: none;
+    color: white;
+    margin-top: 1vw;
+    z-index: 999999;
+    font-weight:200;
+  }
+
+  .line__container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    max-width:  var(--max-width);
+    height:100% ;
+    overflow: hidden;
+
+}
+.separator {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.212);
+}
+.separator:nth-child(1){
+    left: 25%;
+}
+.separator:nth-child(2){
+    left: 50%;
+}
+.separator:nth-child(3){
+    left: 75%;
+}
+.ourstory {
+    margin-top: 8vw;
+}
+.ourstory h1 {
+    font-size: clamp(2rem ,3cqi, 6rem);
+    margin-top: 6vw;
+    text-align: center;
+    opacity: 0.8;
+    color:gainsboro;
+}
+.ourstory h4 {
+    font-size: clamp(1.3rem ,0.2cqi, 3rem);
+    text-align: justify;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 1vw;
+    line-height: 1.1;
+ 
+
+}
+.ourstory h4 span {
+    font-style: italic;
+    color: rgb(45, 202, 45);
+}
+.ourstory img {
+  
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        margin-top: 3vw;
+}
+
+
+
+@media (max-width:1000px){
+    .ourstory h1 {
+        font-size: clamp(2rem ,3cqi, 6rem);
+        margin-top: 6vw;
+        text-align: center;
+        opacity: 0.8;
+        color:gainsboro;
+    }
+   
+        .nav a{
+          font-size:2vw;
+          margin-top: 3vw;
+      
+        } 
+        .ourstory img {
+  
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            margin-top: 3vw;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .ourstory h1 {
+        font-size: clamp(1.7rem ,3cqi, 6rem);
+        margin-top: 6vw;
+        text-align: center;
+        opacity: 0.8;
+        color:gainsboro;
+    }
+    .nav a{
+      font-size:3.5vw;
+      margin-top: 4vw;
+  
+    }
+    .ourstory img {
+  
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        margin-top: 3vw;
+}
+}
